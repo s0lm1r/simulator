@@ -183,7 +183,7 @@ function updatePlayerStats(data) {
     PlayerValuesConfig.synergy < 0 ? PlayerValuesConfig.synergy = 0 : PlayerValuesConfig.synergy;
 
     mainGameContainer.innerHTML =``;
-    if (PlayerValuesConfig.health < 99) {
+    if (PlayerValuesConfig.health < 1) {
         let diedContainer = window.document.querySelector(".mainWrapper");
         diedContainer.classList.add(".died");
         diedContainer.innerHTML = ``;
